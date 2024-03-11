@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage DATA ENTRY</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4285f4;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button.reset {
+            background-color: #ccc;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Homepage DATA ENTRY</h1>
+    <form>
+        <label>Nama : <input type="text" name="nama"></label>
+        <label>NRP : <input type="text" name="nrp"></label>
+        <label>Kelas : <input type="text" name="kelas"></label>
+        <label>Jenis Kelamin : 
+            <input type="radio" name="jenisKelamin" value="Pria"> Pria
+            <input type="radio" name="jenisKelamin" value="Wanita"> Wanita
+        </label>
+        <label>Agama : 
+            <select name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select>
+        </label>
+        <label>Tempat/Tanggal Lahir : <input type="text" name="tempatTanggalLahir"></label>
+        <label>Alamat : <textarea name="alamat"></textarea></label>
+        <label>Riwayat Pendidikan : 
+            <br>A. SD : <input type="text" name="sd">
+            <br>B. SMP : <input type="text" name="smp">
+            <br>C. SMA : <input type="text" name="sma">
+        </label>
+        <label>Email : <input type="text" name="email"></label>
+        <label>Homepage : <input type="text" name="homepage"></label>
+        <label>Hobby : <textarea name="hobby"></textarea></label>
+        <label>Interest : 
+            <input type="checkbox" name="interest" value="Komputer"> Komputer
+            <input type="checkbox" name="interest" value="Sport"> Sport
+            <input type="checkbox" name="interest" value="Travelling"> Travelling
+            <input type="checkbox" name="interest" value="Writing"> Writing
+            <input type="checkbox" name="interest" value="Reading"> Reading
+        </label>
+        <br>
+        <button type="submit">SIMPAN</button>
+        <button type="reset" class="reset">RESET</button>
+    </form>
+</body>
+</html>
+
+body {
+    font-family: 'Verdana', sans-serif;
+    color: #4CAF50; /* warna hijau */
+}
